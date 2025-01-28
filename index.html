@@ -4,419 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volta Solar - פרויקט סיום</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
 
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header p {
-            margin: 0;
-            font-size: 1.2em;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        section {
-            margin: 20px 0;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #007bff;
-        }
-
-        .charts img, .persona-card img, #prototype img, #architecture img {
-            width: 100%;
-            max-width: 500px;
-            display: block;
-            margin: 10px auto;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Volta Solar</h1>
-            <p>שיפור ניהול תקלות בארגון באמצעות חשיבה עיצובית ותיאוריות מוטיבציה</p>
-        </div>
+        <img src="assets/voltaSolarIcon.png" alt="Volta Solar Icon">
+        <h1>Volta Solar - פרויקט סיום</h1>
     </header>
-
     <main>
-        <section id="introduction">
-            <h2>מבוא</h2>
-            <p>Volta Solar הוא ארגון המתמחה בתכנון, התקנה ותפעול של מערכות סולאריות עבור לקוחות פרטיים, עסקיים וציבוריים. מטרתו של הארגון היא לקדם פתרונות אנרגיה מתחדשת, להוזיל עלויות עבור לקוחותיו ולהפחית את טביעת הרגל הפחמנית. החברה משלבת טכנולוגיה מתקדמת ושירות לקוחות אישי על מנת לספק חוויית לקוח מיטבית. </p>
+        <!-- Three-Column Structure -->
+        <section class="three-columns">
+            <!-- Column 1 -->
+            <div class="column">
+                <div class="box">
+                    <h2>אודות Volta Solar</h2>
+                    <p>Volta Solar הוא ארגון המתמחה בתכנון, התקנה ותפעול של מערכות סולאריות עבור לקוחות פרטיים, עסקיים וציבוריים.</p>
+                    <p>מטרתו של הארגון היא לקדם פתרונות אנרגיה מתחדשת, להוזיל עלויות עבור לקוחותיו ולהפחית את טביעת הרגל הפחמנית.</p>
+                    <p>החברה משלבת טכנולוגיה מתקדמת ושירות לקוחות אישי על מנת לספק חוויית לקוח מיטבית.</p>
+                </div>
+
+                <!-- Persona Box (Below About Section) -->
+                <div class="box persona-box">
+                    <h2>פרסונה</h2>
+                    <img src="assets/persona1.png" alt="פרסונה 1">
+                    <img src="assets/persona2.png" alt="פרסונה 2">
+                </div>
+            </div>
+
+            <!-- Merged Column 2 & 3: Summary + Poll Results -->
+            <div class="column wide-box">
+                <div class="box">
+                    <h2>סיכום ראיונות ושאלונים</h2>
+
+                    <!-- First Row -->
+                    <div class="poll-row">
+                        <div class="poll-item">
+                            <img src="assets/poll1.jpg" alt="תוצאה 1">
+                            <p>תוצאה 1</p>
+                        </div>
+                        <div class="poll-item">
+                            <img src="assets/poll2.jpg" alt="תוצאה 2">
+                            <p>תוצאה 2</p>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="poll-row">
+                        <div class="poll-item">
+                            <img src="assets/poll3.jpg" alt="תוצאה 3">
+                            <p>תוצאה 3</p>
+                        </div>
+                        <div class="poll-item">
+                            <img src="assets/poll4.jpg" alt="תוצאה 4">
+                            <p>תוצאה 4</p>
+                        </div>
+                        <div class="poll-item">
+                            <img src="assets/poll5.jpg" alt="תוצאה 5">
+                            <p>תוצאה 5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interview Summary Box (RIGHT BELOW THE POLLS) -->
+                <div class="box interview-summary">
+                    <h2>סיכום ראיונות</h2>
+                    <p><strong>אלון</strong> דיבר על התמחותו בתחום הטכנולוגי ועל היכולת להסתגל לשינויים, תוך שמירה על גישה פרקטית לעבודה.</p>
+                    <p><strong>אלעד</strong> שיתף את חשיבות הצמיחה האישית והמקצועית עבורו, תוך דגש על יכולת התמודדות עם אתגרים.</p>
+                    <p><strong>לנה</strong> הציגה את תהליך העבודה שלה והחשיבות שהיא מייחסת לשיתוף פעולה ולתיאום בין חברי הצוות, והדגישה את השפעתה של התקשורת הבין-אישית על הצלחה בעבודה.</p>
+                    <p><strong>חלי</strong> סיפרה על ניסיון העבודה שלה בסביבות דינמיות ומהירות, וציינה את החשיבות של עבודה תחת לחץ וגמישות במצבים משתנים.</p>
+                    <p><strong>יחד, הארבעה הציגו גישות שונות אך משותפות לצמיחה מקצועית ועבודת צוות, כשהם מתמקדים בעיקר בהתמודדות עם אתגרים וביכולת ללמוד ולהסתגל בסביבה משתנה.</strong></p>
+                </div>
+            </div>
         </section>
 
-        <section id="interviews">
-            <h2>סיכום ראיונות ושאלונים</h2>
-            <section id="survey-results">
-                <h2>תוצאות השאלונים</h2>
-                
-                <div class="survey-images-container">
-                    <!-- תמונה 1 -->
-                    <div class="survey-image">
-                        <img src="assets/poll1.jpg" alt="תוצאה 1" class="survey-image-img">
-                        <p class="survey-image-caption">תוצאה 1</p>
+        <!-- Prototype Section (FULL WIDTH) -->
+        <section class="prototype-section">
+            <div class="box"> 
+                <h2>אב טיפוס</h2>
+            </div>
+            <div class="prototype-images">
+                <div class="prototype-row small-images">
+                    <img src="assets/fieldScreen1.jpg" alt="מסך שדה 1">
+                    <img src="assets/fieldScreen2.jpeg" alt="מסך שדה 2">
+                </div>
+                <div class="prototype-row wide-image">
+                    <img src="assets/csScreen.jpg" alt="מסך CS">
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Functional Requirements Section -->
+        <section class="three-columns requirements">
+            <div class="column">
+                <div class="box">
+                    <h2>דרישות פונקציונליות</h2>
+                    <ul>
+                        <li>המערכת תאפשר גרירה של משימות והחלפת מקומות.</li>
+                        <li>המערכת תייצא פעולות לביצוע אוטומטית.</li>
+                        <li>אפשרויות סימון בטופס: נדרש / לא נדרש.</li>
+                        <li>המערכת תאפשר הזנת הערות.</li>
+                        <li>יצירת התראות למשימות שונות.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="box">
+                    <h2>דרישות לא פונקציונליות</h2>
+                    <ul>
+                        <li>שמירת רשימות ומידע בצורה נגישה.</li>
+                        <li>התאמה אישית לכל מחלקה.</li>
+                        <li>תצוגת מידע ברורה ונוחה.</li>
+                        <li>שדות חובה למילוי בטופס.</li>
+                        <li>עדכון מיידי של שינויים (עד 1 שניות).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="column">
+                    <div class="box">
+                        <h2>דרישות נוספות</h2>
+                        <div class="requirements-grid">
+                            <div class="requirement-card">
+                                <h3>Inclusive</h3>
+                                <p>תמיכה בקוראי מסך, צבעים ניגודיים ופונטים ברורים.</p>
+                            </div>
+                            <div class="requirement-card">
+                                <h3>Fairness</h3>
+                                <p>סדר משימות מבוסס על דחיפות, עומס וזמן ביצוע.</p>
+                            </div>
+                            <div class="requirement-card">
+                                <h3>Privacy</h3>
+                                <p>הצפנה אוטומטית לפי תקני GDPR.</p>
+                            </div>
+                            <div class="requirement-card">
+                                <h3>Sustainability</h3>
+                                <p>הפקת דוחות דיגיטליים בלבד.</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!-- תמונה 2 -->
-                    <div class="survey-image">
-                        <img src="assets/poll2.jpg" alt="תוצאה 2" class="survey-image-img">
-                        <p class="survey-image-caption">תוצאה 2</p>
-                    </div>
-                    
-                    <!-- תמונה 3 -->
-                    <div class="survey-image">
-                        <img src="assets/poll3.jpg" alt="תוצאה 3" class="survey-image-img">
-                        <p class="survey-image-caption">תוצאה 3</p>
-                    </div>
-                    
-                    <!-- תמונה 4 -->
-                    <div class="survey-image">
-                        <img src="assets/poll4.jpg" alt="תוצאה 4" class="survey-image-img">
-                        <p class="survey-image-caption">תוצאה 4</p>
-                    </div>
-                    
-                    <!-- תמונה 5 -->
-                    <div class="survey-image">
-                        <img src="assets/poll5.jpg" alt="תוצאה 5" class="survey-image-img">
-                        <p class="survey-image-caption">תוצאה 5</p>
-                    </div>
+                </div>
+        </section>
+        
+        <div class="three-columns">
+
+            <!-- 📌 Architecture Section (Middle & Right Columns) -->
+            <section class="architecture-section">
+                <div class="box">
+                    <h2>ארכיטקטורה</h2>
+                    <p>המערכת המוצעת מתמקדת ביצירת ממשק נוח ויעיל עבור אנשי השטח, תוך צמצום עומס הזנת הנתונים והעברת מידע רלוונטי לאנשי המטה בצורה ישירה ומהירה.</p>
+<ul>
+    <li>הפתרון יתבסס על Web 2.0 כדי להבטיח גישה מכל מכשיר עם חיבור לאינטרנט.</li>
+    <li>במשרדי החברה יוקם שרת שיכיל מסד נתונים מבוסס NoSQL, המאפשר גמישות להתאמות עתידיות בהתאם לצרכים המשתנים.</li>
+    <li>המערכת תעבוד במתודולוגיית SOA, ותאפשר אינטגרציה עם התוכנות הקיימות בחברה לצורך אוטומציה של העברת נתונים בין המערכות.</li>
+    <li>תתאפשר תקשורת דו-כיוונית: אנשי המטה יעדכנו את סטטוס הטיפול בתקלה בזמן אמת, ואנשי השטח יקבלו את העדכונים ישירות באפליקציה.</li>
+</ul>
+
                 </div>
             </section>
-            
-            <style>
-                #survey-results {
-                    text-align: center;
-                    margin: 50px 0;
-                }
-            
-                .survey-images-container {
-                    display: grid;
-                    grid-template-columns: repeat(5, 1fr);
-                    gap: 20px;
-                    max-width: 100%;
-                    justify-content: center;
-                }
-            
-                .survey-image {
-                    position: relative;
-                    overflow: hidden;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                }
-            
-                .survey-image-img {
-                    width: 100%;
-                    height: auto;
-                    transition: transform 0.3s ease;
-                }
-            
-                .survey-image-img:hover {
-                    transform: scale(1.05);
-                }
-            
-                .survey-image-caption {
-                    position: absolute;
-                    bottom: 10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background-color: rgba(0, 0, 0, 0.5);
-                    color: white;
-                    padding: 5px 10px;
-                    font-size: 16px;
-                    border-radius: 5px;
-                }
-            </style>
-            
-            <div class="interviews-summary">
-                <h3>סיכום הראיונות</h3>
-                <p>במהלך הראיונות עם אלון, אלעד, לנה וחלי, כל אחד מהם סיפר על חוויותיו וגישותיו האישיות בנוגע לנושאים שונים. אלון דיבר על התמחותו בתחום הטכנולוגי ועל היכולת להסתגל לשינויים, תוך שמירה על גישה פרקטית לעבודה. אלעד שיתף את חשיבות הצמיחה האישית והמקצועית עבורו, תוך דגש על יכולת התמודדות עם אתגרים. לנה הציגה את תהליך העבודה שלה והחשיבות שהיא מייחסת לשיתוף פעולה ולתיאום בין חברי הצוות, והדגישה את השפעתה של התקשורת הבין-אישית על הצלחה בעבודה. חלי, בסופו של דבר, סיפרה על ניסיון העבודה שלה בסביבות דינמיות ומהירות, וציינה את החשיבות של עבודה תחת לחץ וגמישות במצבים משתנים. יחד, הארבעה הציגו גישות שונות אך משותפות לצמיחה מקצועית ועבודת צוות, כשהם מתמקדים בעיקר בהתמודדות עם אתגרים וביכולת ללמוד ולהסתגל בסביבה משתנה.</p>
-            </div>
-        </section>
-        
-
-        <section id="persona">
-            <h2>פרסונה מרכזית</h2>
-            <div class="persona-card">
-                <p>
-                <img src="assets/persona1.png" alt="פרסונה">
-                <img src="assets/persona2.png" alt="פרסונה">
-            </p>
-            </div>
-        </section>
-
-        <section id="prototype">
-            <h2>האב טיפוס</h2>
-            <div class="prototype-grid">
-                <img src="assets/narrow1.jpg" alt="תמונה צרה 1">
-                <img src="assets/narrow2.jpg" alt="תמונה צרה 2">
-                <img src="assets/wide.jpg" alt="תמונה רחבה">
-            </div>
-        </section>
-        
-        <style>
-            #prototype {
-                margin: 2rem 0;
-                text-align: center;
-            }
-        
-            .prototype-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr); /* שתי עמודות ברוחב שווה */
-                grid-template-rows: auto auto; /* שתי שורות */
-                gap: 1rem; /* ריווח בין התמונות */
-                max-width: 900px;
-                margin: 0 auto;
-            }
-        
-            .prototype-grid img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                border-radius: 8px; /* פינות מעוגלות לתמונות */
-            }
-        
-            /* גריד מותאם */
-            .prototype-grid img:nth-child(3) {
-                grid-column: span 2; /* התמונה הרחבה תשתרע על שתי עמודות */
-            }
-        </style>
-        
-        <section id="requirements">
-            <h2>דרישות המערכת</h2>
-            <div class="requirements-grid">
-                <!-- דרישות פונקציונליות -->
-                <div class="requirement-section">
-                    <h3>דרישות פונקציונליות</h3>
-                    <ul>
-                        <li>המערכת תאפשר גרירה של משימות והחלפת מקומות. </li>
-                        <li>בעת סימון רובריקות המציינות האם יש צורך בפעולת המשך, המערכת תייצא את הפעולות המסומנות לביצוע עבור הCSL למערכת מעקב המשימות בצורה אוטומטית. </li>
-                        <li>אפשרויות הסימון בשדות החובה בטופס הטכני הן: נדרש / לא נדרש </li>
-                        <li>המערכת תאפשר הזנת הערות בממשק ה-CLOV  </li>
-                        <li>המערכת תאפשר יצירת התראות מוגדרות מראש עבור משימות שונות. </li>
-                    </ul>
+                   
+            <!-- 📌 Gamification Section (Left Column) -->
+            <section class="gamification-section">
+                <div class="box">
+                    <h2>אלמנטים של משחוק</h2>
+                    <p>המערכת משלבת אלמנטים של משחוק כדי להגביר מוטיבציה ומעורבות של אנשי השטח והמטה.</p>
+                    <p><strong>תגמול על דיווחים מדויקים:</strong> דיווחי תקלות מלאים מזכים בנקודות הניתנות לצבירה לפרסים, כגון חופשות או בונוסים.</p>
+                    <p><strong>תחרות צוותית:</strong> תחרויות ידידותיות בין צוותים מבוססות דיווחים מהירים ומדויקים, עם פרסים חודשיים לצוות המוביל.</p>
+                    <p><strong>משוב מיידי:</strong> כל דיווח מזכה את המדווח במשוב ויזואלי מותאם אישית, בשילוב אנימציות חווייתיות המדגישות את התקדמות התהליך.</p>
+                    <p><strong>מנגנונים אלה מחזקים תחושת מסוגלות, שייכות, ובניית אמון בין אנשי השטח למטה.</strong></p>
                 </div>
-        
-                <!-- דרישות לא פונקציונליות -->
-                <div class="requirement-section">
-                    <h3>דרישות לא פונקציונליות</h3>
-                    <ul>
-                        <li>המערכת תאפשר שמירת רשימות, סטטוסים ומידע בצורה נגישה יותר. </li>
-                        <li>המערכת תאפשר התאמה אישית עבור כל מחלקה (מודולריות) </li>
-                        <li>המערכת תהיה נוחה לעבודה, נעימה ויזואלית, תצוגת מידע בצורה יותר נוחה וברורה </li>
-                        <li>יש להגדיר שדות חובה למילוי בטופס התיאום הטכני. </li>
-                        <li>השינויים יתעדכנו באופן מיידי עד 1 שניות. </li>
-                    </ul>
-                </div>
-        
-                <!-- דרישות נוספות -->
-                <div class="requirement-section">
-                    <h3>דרישות נוספות</h3>
-                    <ul>
-                        <li>
-                            דרישות Inclusive                            <ul>
-                                <li>התאמת הממשק לאנשים עם מוגבלויות באמצעות תמיכה בקוראי מסך, צבעים ניגודיים, ופונטים ברורים. </li>
-                         
-                            </ul>
-                        </li>
-                        <li>
-                            דרישות Fairness                             <ul>
-                                <li>מנגנון שקובע את סדר המשימות בהתבסס על קריטריונים אובייקטיביים כגון דחיפות, עומס צוות, וזמן ביצוע צפוי. </li>
-                              
-                            </ul>
-                        </li>
-                        <li>
-                            דרישות Privacy                             <ul>
-                                <li>הצפנה אוטומטית של כל מידע אישי הנוגע ללקוחות, עובדים ומשימות, בהתאם לתקני GDPR. </li>
-                           
-                            </ul>
-                        </li>
-                        <li>
-                            דרישות Sustainability                                <li>הפקת דוחות תחזוקה ומשוב באופן דיגיטלי בלבד, להפחתת השימוש בנייר ומעבר לניהול ירוק.  </li>
-                           
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        </section>
-        
-        <style>
-            #requirements {
-                margin: 2rem 0;
-                text-align: center;
-            }
-        
-            .requirements-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); /* שלושה חלקים ברוחב שווה */
-                gap: 1.5rem;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-        
-            .requirement-section {
-                background-color: #f9f9f9;
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                padding: 1rem;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-        
-            .requirement-section h3 {
-                font-size: 1.2rem;
-                margin-bottom: 0.8rem;
-                color: #333;
-            }
-        
-            .requirement-section ul {
-                list-style-type: disc;
-                padding-left: 1.5rem;
-                text-align: left;
-            }
-        
-            .requirement-section li {
-                margin-bottom: 0.5rem;
-                font-size: 1rem;
-                color: #555;
-            }
-        </style>
-        
-
-
-        <section id="architecture">
-            <h2>ארכיטקטורה</h2>
-            <p>המערכת המוצעת מתמקדת ביצירת ממשק נוח ויעיל עבור אנשי השטח, תוך צמצום עומס הזנת הנתונים והעברת מידע רלוונטי לאנשי המטה בצורה ישירה ומהירה. הפתרון יתבסס על Web 2.0 כדי להבטיח גישה מכל מכשיר עם חיבור לאינטרנט. במשרדי החברה יוקם שרת שיכיל מסד נתונים מבוסס NoSQL, המאפשר גמישות ודינמיות להתאמות עתידיות בהתאם לצרכים המשתנים.
-                המערכת תעבוד במתודולוגיית SOA, עם יכולת התממשקות לתוכנות הקיימות בחברה לצורך אוטומציה של העברת נתונים בין מערכות. כמו כן, תתאפשר תקשורת דו-כיוונית: אנשי המטה יעדכנו את סטטוס הטיפול בתקלה בזמן אמת, ואנשי השטח יקבלו את העדכונים ישירות באפליקציה.</p>
-            <img src="assets/architecture-diagram.png" alt="דיאגרמת ארכיטקטורה">
-        </section>
-
-        <section id="cognition-theories">
-            <h2>תיאוריות קוגניציה</h2>
-        
-            <div id="stakeholders">
-                <h3>בעלי עניין</h3>
-                <p>
-                    הפתרון המוצע: <strong>אפליקציית דיווח תקלות</strong> המיועדת לאנשי השטח, שתאפשר דיווח מהיר, נוח ומותאם לתנאי השטח תוך הפחתת התעסקות מיותרת וצמצום מלל.
-                </p>
-                <h4>בעלי עניין ראשיים</h4>
-                <ul>
-                    <li><strong>אנשי השטח</strong>: אחראים על הזנת התקלות בזמן אמת.</li>
-                    <li><strong>מנהל מרחב</strong>: מפקח על דיווחי התקלות והעברת המידע.</li>
-                </ul>
-                <h4>בעלי עניין משניים</h4>
-                <ul>
-                    <li><strong>מנהלי פרויקטים</strong>: משתמשים במידע לצורך קבלת החלטות ותיאום.</li>
-                    <li><strong>שירות לקוחות (CSLs)</strong>: מספקים עדכונים וטיפול שוטף בתקלות.</li>
-                </ul>
-                <h4>האתגר המרכזי</h4>
-                <p>
-                    גישור הפערים בין עבודת השטח לבין אנשי המטה.
-                </p>
-                <ul>
-                    <li>אנשי השטח מתמודדים עם תנאי עבודה מאתגרים ותקלות בלתי צפויות.</li>
-                    <li>אנשי המטה זקוקים למידע ברור וממוקד שיאפשר להם להבין את הבעיה, לפתור אותה או ללמוד ממנה.</li>
-                    <li>חיבור בין הצדדים מחייב ממשק נוח לאנשי השטח ויכולת להעביר את המידע בצורה מדויקת ותמציתית למטה.</li>
-                </ul>
-                <h4>מטרת הפתרון</h4>
-                <p>
-                    ליצור מערכת שמספקת לאנשי השטח <strong>חוויית שימוש קלה ופשוטה</strong> ותומכת באנשי המטה עם <strong>מידע ענייני ורלוונטי</strong> המאפשר שיפור, למידה וייעול תהליכים.
-                </p>
-                <div id="feature-summary">
-                    <h3>תמצית הפיצ'ר</h3>
-                    <p>
-                        הפיצ'ר שאנו מפתחים הוא מסמך דינמי לתיעוד ומעקב תקלות, המאפשר שקיפות מלאה בין אנשי השטח לאנשי המטה.  
-                        תחילה יצרנו אב-טיפוס מנייר להמחשה ולקבלת פידבק ראשוני, ולאחר מכן עברנו לסקיצה מעמיקה בכלי עיצוב כמו FIGMA לצורך דיוק הפרטים.  
-                        המערכת כוללת יכולת לצרף תמונות להבהרת התקלות ואינדיקטור סטטוס המתעדכן בזמן אמת, המבטל את הצורך בבירור ידני על התקדמות הטיפול.
-                    </p>
-                </div>
-                
-            </div>
-        </section>
-        
-        
-        <section id="theories">
-            <h2>תיאוריות מוטיבציה</h2>
-            <p>הפרויקט משלב עקרונות SDT, Flow ומשחוק כדי לשפר את המוטיבציה והמעורבות של העובדים.</p>
-            
-            <div id="flow">
-                <h3>כיצד נגיע למצב של Flow או Group Flow?</h3>
-                <p>על מנת להגיע למצב של Flow בעבודה עם הפיצ'ר, התהליך תוכנן כך שהוא ישלב את המרכיבים המרכזיים:</p>
-                <ul>
-                    <li><strong>בהירות במטרות:</strong> הפיצ'ר מספק מטרות ברורות עם נקודות ציון התקדמות (milestones) מדויקות שמאפשרות לעובדים להבין את יעדי המשימה שלהם.</li>
-                    <li><strong>אתגר מותאם:</strong> המערכת מזהה את רמת המיומנות של העובד ומספקת לו משימות שתואמות ליכולותיו, תוך שמירה על איזון בין קושי לסיפוק.</li>
-                    <li><strong>פידבק מיידי:</strong> הפיצ'ר מספק לעובדים משוב בזמן אמת על התקדמותם, מה שמחזק תחושת שליטה וביטחון.</li>
-                    <li><strong>עבודה שיתופית:</strong> במצבים קבוצתיים, הפיצ'ר מקדם שיתוף פעולה דרך יצירת דינמיקה של Group Flow שמדגישה מטרה משותפת והשלמה הדדית.</li>
-                </ul>
-            </div>
-        
-            <div id="sdt">
-                <h3>שימוש בתאוריית SDT (Self-Determination Theory)</h3>
-                <p>עקרונות SDT שולבו בתכנון הפיצ'ר כדי לענות על הצרכים הפסיכולוגיים של העובדים:</p>
-                <ul>
-                    <li><strong>תחושת מסוגלות (Competence):</strong> הפיצ'ר מעוצב כך שהוא מספק כלים ואפשרויות שמעצימים את יכולת העובד לפתור בעיות ולהתקדם בעבודה.</li>
-                    <li><strong>תחושת אוטונומיה (Autonomy):</strong> העובדים יכולים להתאים את סביבת העבודה שלהם ולבחור את דרכי הפעולה המתאימות להם בתוך המערכת.</li>
-                    <li><strong>תחושת שייכות (Relatedness):</strong> המערכת כוללת כלים לקידום שיתוף פעולה בין צוותים ושמירה על קשר עם קולגות.</li>
-                </ul>
-            </div>
-            <div id="gamification">
-                <h3>אלמנטים של משחוק</h3>
-                <p>
-                    המערכת משלבת אלמנטים של משחוק כדי להגביר מוטיבציה ומעורבות של אנשי השטח והמטה.  
-                    <strong>תגמול על דיווחים מדויקים:</strong> דיווחי תקלות מלאים מזכים בנקודות הניתנות לצבירה לפרסים, כגון חופשות או בונוסים.  
-                    <strong>תחרות צוותית:</strong> תחרויות ידידותיות בין צוותים מבוססות דיווחים מהירים ומדויקים, עם פרסים חודשיים לצוות המוביל.  
-                    <strong>משוב מיידי:</strong> כל דיווח מזכה את המדווח במשוב ויזואלי מותאם אישית, בשילוב אנימציות חווייתיות המדגישות את התקדמות התהליך.  
-                    מנגנונים אלה מחזקים תחושת מסוגלות, שייכות, ובניית אמון בין אנשי השטח למטה.
-                </p>
-            </div>
-            
-        </section>
-        
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Volta Solar. כל הזכויות שמורות.</p>
+            </section>
         </div>
+        
+<!-- 📌 Stakeholders Section (Middle & Right Columns, Below Architecture) -->
+<section class="stakeholders-section">
+    <div class="box stakeholders-box"> <!-- Wrapped everything inside a new box -->
+        <h2>בעלי עניין</h2>
+        <div class="stakeholders-grid">
+            <!-- Right Column: Primary & Secondary Stakeholders -->
+            <div class="stakeholders-right">
+                <h3>בעלי עניין ראשיים</h3>
+                <ul>
+                    <li>🛠️ <strong>אנשי שטח:</strong> אחראים על הזנת התקלות בזמן אמת.</li>
+                    <li>👨‍💼 <strong>מנהל מרחב:</strong> מפקח על דיווחי התקלות והעברת המידע.</li>
+                </ul>
+                <h3>בעלי עניין משניים</h3>
+                <ul>
+                    <li>📊 <strong>מנהלי פרויקטים:</strong> משתמשים במידע לצורך קבלת החלטות ותיאום.</li>
+                    <li>📞 <strong>שירות לקוחות (CSLs):</strong> מספקים עדכונים וטיפול שוטף בתקלות.</li>
+                </ul>
+            </div>
+
+            <!-- Left Column: Challenge -->
+            <div class="stakeholders-left">
+                <h3>האתגר המרכזי</h3>
+                <ul>
+                    <li>📍 גישור הפערים בין עבודת השטח לבין אנשי המטה.</li>
+                    <li>📊 אנשי השטח מתמודדים עם תנאי עבודה מאתגרים ותקלות בלתי צפויות.</li>
+                    <li>🔗 אנשי המטה זקוקים למידע ברור וממוקד שיאפשר להם להבין את הבעיה, לפתור אותה או ללמוד ממנה.</li>
+                    <li>⚡ חיבור בין הצדדים מחייב ממשק נוח לאנשי השטח ויכולת להעביר את המידע בצורה מדויקת ותמציתית למטה.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Centered Goal Section -->
+        <div class="solution-goal">
+            <h3>מטרת הפתרון</h3>
+            <p><strong>ליצור מערכת שמספקת לאנשי השטח חוויית שימוש קלה ופשוטה ותומכת באנשי המטה עם מידע ענייני ורלוונטי המאפשר שיפור, למידה וייעול תהליכים.</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- 📌 Feature Summary Section (Below Gamification) -->
+<section class="feature-summary-section">
+    <div class="box">
+        <h2>תמצית הפיצ'ר</h2>
+        <p>הפיצ'ר שאנו מפתחים הוא מסמך דינמי לתיעוד ומעקב תקלות, המאפשר שקיפות מלאה בין אנשי השטח לאנשי המטה.</p>
+        <p>תחילה יצרנו אב-טיפוס מנייר להמחשה ולקבלת פידבק ראשוני, ולאחר מכן עברנו לסקיצה מעמיקה בכלי עיצוב כמו FIGMA לצורך דיוק הפרטים.</p>
+        <p>המערכת כוללת יכולת לצרף תמונות להבהרת התקלות ואינדיקטור סטטוס המתעדכן בזמן אמת, המבטל את הצורך בבירור ידני על התקדמות הטיפול.</p>
+    </div>
+</section>
+
+<!-- 📌 Motivation Theories Section (New Full-Width Section) -->
+<section class="motivation-section">
+    <div class="box">
+        <h2>תיאוריות מוטיבציה</h2>
+        <p>הפרויקט משלב עקרונות SDT, Flow ומשחוק כדי לשפר את המוטיבציה והמעורבות של העובדים.</p>
+
+        <h3>כיצד נגיע למצב של Flow או Group Flow?</h3>
+        <p>על מנת להגיע למצב של Flow בעבודה עם הפיצ'ר, התהליך תוכנן כך שהוא ישלב את המרכיבים המרכזיים:</p>
+
+        <ul>
+            <li><strong>בהירות במטרות:</strong> הפיצ'ר מספק מטרות ברורות עם נקודות ציון התקדמות (milestones) מדויקות שמאפשרות לעובדים להבין את יעדי המשימה שלהם.</li>
+            <li><strong>אתגר מותאם:</strong> המערכת מזהה את רמת המיומנות של העובד ומספקת לו משימות שתואמות ליכולותיו, תוך שמירה על איזון בין קושי לסיפוק.</li>
+            <li><strong>פידבק מיידי:</strong> הפיצ'ר מספק לעובדים משוב בזמן אמת על התקדמותם, מה שמחזק תחושת שליטה וביטחון.</li>
+            <li><strong>עבודה שיתופית:</strong> במצבים קבוצתיים, הפיצ'ר מקדם שיתוף פעולה דרך יצירת דינמיקה של Group Flow שמדגישה מטרה משותפת והשלמה הדדית.</li>
+        </ul>
+
+        <!-- 📌 Centered SDT Title and Description -->
+        <h3 class="sdt-title">שימוש בתאוריית SDT (Self-Determination Theory)</h3>
+        <p class="sdt-description">עקרונות SDT שולבו בתכנון הפיצ'ר כדי לענות על הצרכים הפסיכולוגיים של העובדים:</p>
+
+        <!-- SDT Cards (Three-Column Grid) -->
+        <div class="sdt-grid">
+            <div class="sdt-card">
+                <h3>תחושת מסוגלות (Competence)</h3>
+                <p>הפיצ'ר מעוצב כך שהוא מספק כלים ואפשרויות שמעצימים את יכולת העובד לפתור בעיות ולהתקדם בעבודה.</p>
+            </div>
+            <div class="sdt-card">
+                <h3>תחושת אוטונומיה (Autonomy)</h3>
+                <p>העובדים יכולים להתאים את סביבת העבודה שלהם ולבחור את דרכי הפעולה המתאימות להם בתוך המערכת.</p>
+            </div>
+            <div class="sdt-card">
+                <h3>תחושת שייכות (Relatedness)</h3>
+                <p>המערכת כוללת כלים לקידום שיתוף פעולה בין צוותים ושמירה על קשר עם קולגות.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>כל הזכויות שמורות &copy; 2025 Volta Solar</p>
     </footer>
 </body>
 </html>
