@@ -112,12 +112,12 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 450px; 
+    min-height: 450px; /* Ensuring same height as Interview Summary */
     margin-top: -10px;
 }
 
 .persona-box img {
-    width: 100%; 
+    width: 100%; /* Increase size without making the white container bigger */
     height: 197px;
     max-width: 350px;
     border-radius: 8px;
@@ -138,17 +138,17 @@ main {
     margin-bottom: 15px; /* Adds spacing between paragraphs */
 }
 
-
+/* Enhanced H2 Headings */
 .box h2 {
-    color: #556B8D; 
+    color: #556B8D; /* A deeper shade for better contrast */
     font-family: 'Calibri', sans-serif;
-    font-size: 24px; 
+    font-size: 24px; /* Slightly larger font size */
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
-    text-transform: uppercase; 
-    letter-spacing: 1.5px; 
-    position: relative; 
+    text-transform: uppercase; /* Makes the heading more distinct */
+    letter-spacing: 1.5px; /* Adds slight spacing for a modern look */
+    position: relative; /* Required for pseudo-elements */
     transition: all 0.3s ease-in-out;
 }
 
@@ -175,7 +175,7 @@ main {
 }
 
 .interview-summary {
-    margin-top: -10px;
+    margin-top: -10px; /* Adjust as needed */
 }
 
 
@@ -212,22 +212,22 @@ main {
     gap: 50px;
 }
 
-
+/* Make only the first two images smaller */
 .prototype-row.small-images img {
-    width: 40%; 
+    width: 40%; /* Smaller width */
     max-height: 500px; 
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Row for the large CS screen image */
 .prototype-row.wide-image {
     display: flex;
     justify-content: center;
 }
 
-
+/* Keep the CS screen image at full width */
 .prototype-row.wide-image img {
     width: 75%;
     max-width: 900px;
@@ -239,7 +239,7 @@ main {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; 
+    gap: 10px; /* Reduce the gap (previously 20px) */
     justify-content: center;
 }
 
@@ -249,7 +249,7 @@ ul li {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 16px; 
+    font-size: 16px; /* Slightly increase text size for readability */
 }
 
 /* Custom bullet design */
@@ -258,7 +258,7 @@ ul li::before {
     color: #3498db67;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    margin-right: -35px; 
+    margin-right: -35px; /* Moves the bullet further right to align text */
     flex-shrink: 0;
 }
 
@@ -269,7 +269,7 @@ ul li::before {
     gap: 15px;
     margin-top: 15px;
 }
-
+/* Requirement Cards - Diagonal Two-Tone Background */
 .requirement-card {
     position: relative;
     padding: 15px;
@@ -277,10 +277,10 @@ ul li::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: 'Calibri', sans-serif;
-    overflow: hidden; 
+    overflow: hidden; /* Ensures the pseudo-element stays inside the card */
 }
 
-
+/* Diagonal Split using ::before */
 .requirement-card::before {
     content: "";
     position: absolute;
@@ -288,40 +288,33 @@ ul li::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #c9c0b6 50%, #f8d9b4 50%); 
+    background: linear-gradient(135deg, #c9c0b6 50%, #f8d9b4 50%); /* Diagonal Split */
     z-index: -1; /* Places it behind the text */
 }
 
 
 /* Headings for Each Card */
 .requirement-card h3 {
-    font-size: 16px;
+    margin: 0;
+    color: #333;
     font-weight: bold;
-    color: #556B8D; 
-    font-family: 'Calibri', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+    font-size: 18px;
 }
 
 /* Text Inside Each Card */
 .requirement-card p {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
 }
 
-/* Background*/
+/* Two-tone diagonal gradient background */
 .requirement-card:nth-child(odd) {
-    background: linear-gradient(135deg, #f7ecd8 0%, #f7ecd8 100%); 
+    background: linear-gradient(135deg, #f7ecd8 0%, #f7ecd8 100%); /* Light orange */
 }
 
 .requirement-card:nth-child(even) {
-    background: linear-gradient(135deg, #f7ecd8 0%, #f7ecd8 100%);  
+    background: linear-gradient(135deg, #f7ecd8 0%, #f7ecd8 100%); /* Another light orange tone */
 }
 
 
@@ -333,13 +326,20 @@ ul li::before {
     justify-content: center;
 }
 
-/* Gamification Section (Left Column) */
 .gamification-section {
-    flex: 1; 
+    flex: 1;
     display: flex;
-    justify-content: center;
-    margin-top: -20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    max-width: 362px; 
+    width: 100%; 
+    margin: 0 auto; 
+    margin-left: 20px;
+    margin-top: -505px;
 }
+
+
 
 .gamification-section .box {
     width: 100%;
@@ -349,14 +349,14 @@ ul li::before {
 /* Centering and Enlarging the Last Sentence in Gamification Section */
 .gamification-section .box p:last-child {
     text-align: center;
-    font-size: 18px; 
+    font-size: 18px; /* Adjust as needed */
     font-weight: bold;
 }
 
 
 /* Architecture Section (Middle & Right Columns) */
 .architecture-section {
-    flex: 2; /* Two columns */
+    flex: 2; /* Ensures it spans two columns */
     display: flex;
     justify-content: flex-start;
     margin-top: -155px;
@@ -364,7 +364,7 @@ ul li::before {
 
 .architecture-section .box {
     width: 100%;
-    max-width: 900px; 
+    max-width: 900px; /* Keeps it from getting too wide */
     height:320px;
 }
 
@@ -373,17 +373,18 @@ ul li::before {
 .stakeholders-section {
     display: flex;
     justify-content: center;
-    width: 66%; 
-    margin: 0 auto; 
-    margin-top: -290px;
+    width: 66%; /* Spanning two columns */
+    margin: 0 auto; /* Center alignment */
+    margin-top: -155px;
     margin-right: 0px;
+    height: 650px;
 }
 
 /* Adjust Spacing Between Bullet Points */
 .stakeholders-left ul li,
 .stakeholders-right ul li {
-    margin-bottom: 12px; 
-    line-height: 1.8; 
+    margin-bottom: 12px; /* Adjust space between bullets */
+    line-height: 1.8; /* Improve readability */
 }
 
 /* Grid Layout */
@@ -403,12 +404,14 @@ ul li::before {
     flex: 1;
 }
 
-/* Stakeholders Container */
+/* Stakeholders Container - Aligns the two sections side by side */
 .stakeholders-container {
     display: flex;
     gap: 40px;
     align-items: flex-start;
 }
+
+
 
 /* Left Column - Feature Summary */
 .feature-summary {
@@ -419,7 +422,7 @@ ul li::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Right Column - Stakeholders */
+/* Right Column - Stakeholders (keeps the previous grid layout) */
 .stakeholders-grid {
     flex: 2;
     display: flex;
@@ -433,17 +436,9 @@ ul li::before {
     margin-top: 20px;
 }
 .solution-goal h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    color: #556B8D; 
-    font-family: 'Calibri', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+    color: #556B8D;
 }
 .solution-goal p {
     font-size: 18px;
@@ -454,12 +449,12 @@ ul li::before {
 /* Feature Summary Section (One Column Left) */
 .feature-summary-section {
     display: flex;
-    justify-content: flex-start; 
-    width: 33%; 
-    margin-top: -375px; 
-    margin-right: auto;
+    justify-content: flex-start; /* Aligns left */
+    width: 33%; /* Makes it one column */
+    margin-top: -20px; /* Moves it upwards */
+    margin-right: auto; /* Pushes it to the left */
     height: 390px;
-    height: 375px;
+    
 }
 
 .feature-summary-section .box {
@@ -468,13 +463,15 @@ ul li::before {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 330px;
+    
 }
 
 
-/*  Motivation Section */
+/*  Motivation Section - Full Width */
 .motivation-section {
     width: 100%; 
-    margin-top: -7px;
+    margin-top: -10px;
 }
 
 .motivation-section .box {
@@ -487,7 +484,7 @@ ul li::before {
 
 /* Centering the SDT title and description */
 .sdt-title {
-    color: #556B8D; 
+    color: #556B8D; /* Match the existing h2 color */
     font-family: 'Calibri', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -513,7 +510,7 @@ ul li::before {
     margin-top: 20px;
 }
 
-/* SDT Cards */
+/* SDT Cards with three different shades of light orange */
 .sdt-card:nth-child(1) {
     background: #f7ecd8
 }
@@ -537,17 +534,10 @@ ul li::before {
 
 /* Card Titles */
 .sdt-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
     font-weight: bold;
-    color: #556B8D; 
-    font-family: 'Calibri', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    position: relative;
-    transition: all 0.3s ease-in-out;
+    color: #555;
 }
 
 footer {
